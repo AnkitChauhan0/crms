@@ -1,0 +1,469 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;}
+
+.full-page{
+	height: 100%;
+	width:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./Image/jss1.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	overflow-y: 0;
+	overflow-x: 0;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+	padding-left: 50px;
+	padding-right: 30px;
+	padding-top: 50px;
+}
+
+nav{
+	flex: 1;
+	text-align: right;
+}
+
+
+nav ul{
+	display: inline-block;
+	list-style: none;
+}
+
+.navbar .logo{
+    text-decoration: none;
+    text-shadow: rgb(0,0,0,0.4);
+	font-size: 30px;
+	color: white;
+	font-family: sans-serif; 
+}
+
+nav ul li{
+	display: inline-block;
+	margin-right: 50px ;
+}
+
+nav ul li a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	font-family: sans-serif;
+}
+
+nav ul li button{
+	font-size: 20px;
+	color: white;
+	outline: none;
+	border: none;
+	background: transparent;
+	cursor: pointer;
+	font-family: sans-serif;
+}
+
+nav ul li button:hover{
+	color: aqua;
+}
+
+nav ul li a:hover{
+	color: aqua;
+}
+
+a{
+	text-decoration: none;
+	color: palevioletred;
+	font-size: 28px;
+}
+
+.form-box{
+	width: 380px;
+	height: 480px;
+	position: relative;
+	margin: 2% auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px;
+	overflow: hidden;
+}
+
+.register-box{
+	width: 45%;
+	height: 450px;
+	position: relative;
+	margin: 2% auto;
+	background: rgba(0,0,0,0.4);
+	padding: 10px;
+	overflow: hidden;
+}
+
+.button-box{
+ width: 220px;
+ margin: 35px auto;
+ position: relative;
+ box-shadow: 0 0 20px 9px #ff61241f;
+ border-radius: 30px;
+}
+
+#login{
+	left: 50px;
+}
+
+#login input{
+	color: white;
+	font-size: 15;
+}
+
+#register{
+	left: 10px;
+}
+
+#register input{
+	color: white;
+	font-size: 15;
+} 
+
+.input-group-login{
+	top: 70px;
+	position: absolute;
+	width: 280px;
+	transition: .5s;
+	color: white;
+}
+
+.input-field{
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border-top-style: none;
+	border-left-style: none;
+	border-right-style: none;
+	outline: none;
+	background: transparent;
+}
+
+
+h3{ 
+	color: white;
+	text-align: center;
+	display: block;
+}
+
+
+.input-group-register{
+	top:50px;
+	position: absolute;
+	width: 50%;
+	transition: .5s;
+	color: white;
+	padding-left: -200px;
+	justify-content: center;
+	margin-left: -200px;
+
+}
+
+#register .input-field{
+	width: 30%;
+	padding: 0px 10;
+	margin: -10px 10px;
+	background: transparent;
+	justify-content: center !important;
+}
+
+.submit-btn{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #f3c693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	color: black;
+}
+
+
+
+#register{
+	left: 300px;
+	justify-content: center;
+}
+
+#register input{
+	color: white;
+	font-size: 15;
+	margin-right: 300px;
+}
+
+.registerbtn{
+	width: 20%;
+	padding: 10px 20px;
+	cursor: pointer;
+	margin-left: 80px;
+	margin-right: -20px;
+	background: #f3c693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	align-content: center;
+	color: black;
+}
+
+.type-btn{
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	padding-bottom: 10px;
+	background: white;
+	color: black;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+span{
+	color: white;
+	font-size: 14px;
+	bottom: -35px;
+	position: relative;
+	display: block;
+	text-align: center;
+    margin-top: 10 px;
+
+}
+
+
+span p{
+	color: #777;
+	font-size: 12px;
+	bottom: 10px;
+	position: absolute;
+	display: block;
+	padding-left: 150px;
+}
+
+span a{
+	color: white;
+	font-size: 12px;
+	bottom: 20px;
+}
+
+.register-box span{
+	color: white;
+	font-size: 14px;
+	bottom: -430px;
+	position: relative;
+    margin-top: 10px;
+    margin-left: 80px;
+
+
+}
+
+
+.register-box .type-btn{
+	width: 10%;
+	padding: 0px 10px;
+	cursor: pointer;
+	display: block;
+	margin-left: 80px;
+	background: white;
+	color: black;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+	margin-top: -20px;
+	margin-right: -40px;
+}
+
+/* Company registration */
+#cregister{
+	left: 300px;
+}
+
+#cregister input{
+	color: white;
+	font-size: 15;
+}
+
+.input-group-cregister{
+	top:50px;
+	position: absolute;
+	width: 50%;
+	transition: .5s;
+	color: white;
+	padding-left: -200px;
+	justify-content: center;
+	margin-left: -200px;
+}
+
+#cregister .input-field{
+	width: 50%;
+	padding: 0px 10;
+	margin: 10px 10px;
+	background: transparent;
+	justify-content: center !important;
+} 
+.signin p{
+	color: #777;
+	font-size: 12px;
+	bottom: -10px;
+	position: absolute;
+	display: block;
+	padding-left: 160px;
+	text-align: center;
+}
+
+.signin p a{
+	color: white;
+	font-size: 12px;
+	bottom: 10px;
+}
+
+.cterms a{
+	color: blue;
+	font-size: 12px;
+	bottom: 10px;
+}
+
+/* For dashboards */
+
+#col1{
+	/*background: red;*/
+	width :400px;
+	height: 100px;
+	float : left; 
+	margin: 50px;
+	display: table-cell;
+}
+
+#col2{
+	/*background: green;*/
+	width :400px;
+	height: 100px;
+	float : left;
+	margin : 50px;
+	 display: table-cell;
+}
+
+#col3{
+	/*background: blue;*/
+	width :220px;
+	height: 100px;
+	float : right;
+	margin : 10px;
+	 display: table-cell;
+}
+	
+#blist1{
+	list-style-type:none;
+	margin-top: 15px;
+}
+
+ #blist3 li{
+	display : inline;
+	size: 100px;
+	padding: 6px;
+	cursor : pointer;
+	color:white;
+}
+#blist4 {
+	color:white;
+
+}
+
+#lic{
+	position: fixed;
+	bottom: 50px;
+	margin:10px;
+	color:white;
+}
+
+#dash{
+
+	margin: 0px;
+}
+.row .well{
+	border: black solid;
+}
+img{
+	margin: 0 10px;
+}
+
+.img-responsive {
+	background-image:rr.jpg;
+	width: 20% !important;
+	height: 15% !important;
+	align-content: center;
+	margin-left: 30%;
+	margin-bottom: 10px;
+
+}
+
+th:not(.nohover):hover{
+    background: rgba(0,0,0,0.2);
+                  color: black;
+}
+             
+
+table{
+	color: white;
+}
+
+td:hover{
+	background-color: white;
+	color: black;
+}
+
+th:hover{
+	color: black;
+	background: rgba(0,0,0,0.2);
+}
+
+#dash1.full-page{
+	height: 200% !important;
+	width:100%;
+	background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(./Image/jss1.jpg);
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+
+}
+
+.check{
+	color: black;
+}
+
+.apply th{
+	color: white;
+}
+
+.apply td{
+	color: white;
+}
+
+
+.apply th:not(.nohover):hover{
+	background-color: black;
+	color: brown;
+}
+
+.apply td:hover{
+	background-color: white;
+	color: brown;
+}
+
+.apply tr:hover{
+	color: black;
+}
+
+.check input{
+	color: white !important;
+	background-color:black !important;
+}
+
+h6{
+	color: white;
+}
