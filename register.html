@@ -1,0 +1,116 @@
+<html>
+	<head>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<!--<nav class="navbar navbar-fixed-top" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Campus Recruitment System</a>
+				</div>
+				<ul id="list1" class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+		</nav> -->
+		<style type="text/css">
+		label{
+      	   margin-left: -20px;
+      		padding-left: -40px;
+      		padding-right: 0px;
+      		width: 110px;
+      		display: inline-block;
+      	}
+      	.register-box .type-btn{
+         display: inline-block;
+          margin-left: 20px;
+         padding-left: 10px !important;
+         margin-top: 5px;
+        }
+	</style>
+	  </head>
+	  <body>
+		<div class="full-page" id="dash">
+		<div class="navbar">
+          <div>
+           <a href="" class="logo"><!--<img src="images/jss_logo.jpg">-->JSS Noida</a>
+          </div>
+        <nav>
+         <ul id="MenuItems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="loginbtn" onclick="document.getElementId('login-form').style.display='block' " style="width: auto;">Login</button></li>
+         </ul>
+        </nav> 
+        </div>
+		<h3>STUDENT REGISTRATION (Personal Details)</h3>
+		<div class="register-box">
+		<form id="register" action="student.php" method="POST" class="input-group-register"enctype="multipart/form-data">
+        <div class="container">
+		   
+           <label for="name"><b>Student Name:</b></label>
+           <input type="text" class="input-field" placeholder="Enter your Name" name="name" required><br>
+		   
+		   <label for="email"><b>Student Email:</b></label>
+           <input type="email" class="input-field" placeholder="abc@xyz.com" name="email" required><br>
+		   
+		   <label for="dob"><b>Date Of Birth :</b></label>
+           <input type="date" class="input-field" name="dob" required><br>
+
+           <label for="branch" ><b>Branch:</b></label>
+	      <select name="branch" class="type-btn" placeholder="Select">
+          <option label="cse">CSE</option>
+          <option label="it">IT</option>
+          <option label="ece">ECE</option>
+	      <option label="mee">MEC</option>
+	      <option label="msme">MCA</option>
+	      <option label="che">MBA</option>
+	      </select><br>
+
+          <label for="year"><b>Passing Year :</b></label>
+          <input type="number" class="input-field" placeholder="Ex. 2019" name="year" required> <br>
+	
+	      <label for="cpi"><b>Degree(CGPA):</b></label>
+          <input type="decimal" class="input-field"  placeholder="Out of 10" name="cpi" required max="10" min="0"><br>
+	
+          <label for="12p"><b>12th Percent :</b></label>
+          <input type="decimal" class="input-field" placeholder="Ex.85.5" name="12p" required min="0" max="100"><br>
+	
+	      <label for="10p"><b>10th Percent :</b></label>
+          <input type="decimal" class="input-field" placeholder="Ex.85.5" name="10p" required min="0" max="100"><br>
+		  
+		  <label for="pwd"><b>Password :</b></label>
+          <input type="password" class="input-field" placeholder="minimum 6 characters" name="pwd" required><br>
+		  
+		  <label for="phone"><b>Phone Number:</b></label>
+          <input type="number" class="input-field" placeholder="" name="phone" required> <br>
+		  
+		  <label for="degree" ><b>Course :</b></label>
+	      <select name="degree" class="type-btn" placeholder="Select">
+          <option label="btech">B.Tech</option>
+		  <option label="btech">M.Tech</option>
+		  <option label="bca">BCA</option>
+          <option label="mca">MCA</option>
+	      <option label="msc">MBA</option>
+		  </select>
+          <br>
+          <p class="cterms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+          </div>
+        <BR><br>
+        </form> 
+        
+
+        <span ><div class="signin">
+        <p>Already have an account? <a href="index.html">Login</a>.</p>
+        </div></span>
+         </div>
+	    </div>
+        </div>
+	</body>
+		
+</html>

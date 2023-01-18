@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/style.css">
+		<!--<nav class="navbar navbar-fixed-top" id="top-nav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Campus Recruitment System</a>
+				</div>
+				<ul id="list1" class="nav navbar-nav">
+					<li class="active"><a href="index.html">Home</a></li>
+				</ul>
+			</div>
+		</nav> -->
+		<style type="text/css">
+		label{
+      	   margin-left: -20px;
+      		padding-left: -40px;
+      		padding-right: 0px;
+      		width: 110px;
+      		display: inline-block;
+      	}
+      	.register-box .type-btn{
+         display: inline-block;
+          margin-left: 20px;
+         padding-left: 10px !important;
+         margin-top: 5px;
+        }
+    </style>
+	  </head>
+	  <body>
+		<div class=" full-page" id="dash" >
+		<div class="navbar">
+          <div>
+           <a href="" class="logo"><!--<img src="images/jss_logo.jpg">-->JSS Noida</a>
+          </div>
+        <nav>
+         <ul id="MenuItems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="loginbtn" onclick="document.getElementId('login-form').style.display='block' " style="width: auto;">Login</button></li>
+         </ul>
+        </nav> 
+        </div>
+		<h3>COMPANY REGISTRATION (Company Details)</h3>
+		<div class="register-box">
+		<form id="register" action="company.php" method="POST" class="input-group-register">
+        <div class="container">
+           
+           <label for="name"><b>Name:</b></label>
+           <input type="text" class="input-field" placeholder="Enter in capital letters" name="name" required><br>
+		   
+		   <label for="email"><b>Email:</b></label>
+           <input type="email" class="input-field" placeholder="abc@xyz.com" name="email" required><br>
+		   
+		   <label for="pwd"><b>Password:</b></label>
+           <input type="password" class="input-field"  name="pwd" placeholder="minimum 6 characters" required><br>
+
+           <label for="phone"><b>Phone :</b></label>
+           <input type="number" class="input-field" placeholder="10 digits" name="phone" required ><br>
+
+          <label for="location"><b>Location:</b></label>
+          <input type="text" class="input-field" placeholder="Ex. Delhi" name="location" required ><br>
+	
+	      <label for="ceo"><b>C.E.O.:</b></label>
+          <input type="text" class="input-field" placeholder=" " name="ceo" required ><br>
+	
+          <label for="cto"><b>C.T.O.:</b></label>
+          <input type="text" class="input-field" placeholder=" " name="cto" required ><br>
+	
+	     <label for="hr"><b>HR:</b></label>
+          <input type="text" class="input-field" placeholder=" " name="hr" required ><br>
+		  
+		  <label for="worth"><b>Net Worth:</b></label>
+           <input type="number"  class="input-field" placeholder="in crores" name="worth" required ><br>
+		  
+		  <label for="found"><b>Founded on:</b></label>
+          <input type="text" class="input-field" placeholder=" " name="found" required ><br>
+		  
+		  <label for="founder"><b>Founder:</b></label>
+          <input type="text" class="input-field" placeholder=" " name="founder" required ><br><br>
+
+    <p class="cterms">By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</form>
+  <div class="container signin">
+    <p>Already have an account? <a href="index.html">Login</a>.</p>
+  </div>
+</div>
+ </div>
+</div>
+</body>
+</html>
