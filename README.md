@@ -77,7 +77,7 @@ placed students, job profiles etc. and can delete the records as well.
 
 #### Database: MySQL
 
-#### Software Stack: WAMP
+#### Software Stack: XAMPP
 
 
 
